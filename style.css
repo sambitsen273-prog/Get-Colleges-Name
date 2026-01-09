@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-image 0.5s ease-in-out; /* Smooth fade effect */
+    background-attachment: fixed; /* Keeps background still while scrolling */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    background-blend-mode: overlay;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/d6/96/36/photo4jpg.jpg?w=1400&h=1400&s=1");
+}
+div{
+    height: 500px;
+    width: 400px;
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+input{
+    margin-top: 10px;
+    background: transparent;
+}
+li{
+    opacity: 1.5;
+}
+span{
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+input:hover{
+    background:white;
+}
+input:focus{
+    background-color: white;
+}
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* semi-transparent */
+  border-radius: 10px;
+}
+
+/* Optional: on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+::placeholder {
+  font-weight: 700; 
+  color: black;       /* darker = more visible */
+  opacity: 1;            /* important! */
+}
+button{
+    background: transparent;
+    font-weight: 750;
+    color: black;
+}
+button:hover{
+    background-color: white;
+}
